@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stories about Poseidon</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script>
+      function redirectToPage() {
+        var select = document.getElementById("pages");
+        var selectedValue = select.options[select.selectedIndex].value;
+        if (selectedValue) {
+          window.location.href = selectedValue.toLowerCase() + ".html";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Stories about Poseidon</h1>
+    </header>
+    <div class="dropdown-container">
+      <div class="dropdown-trigger">Hover to select page</div>
+      <select id="pages" name="poseidon-page" onchange="redirectToPage()">
+        <option value="index">Home</option>
+        <option value="about">About</option>
+        <option value="powers">Powers</option>
+        <option value="stories">Stories</option>
+      </select>
+    </div>
+    <nav>
+      <ul class="horizontal-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Poseidon</a></li>
+        <li><a href="powers.html">Powers and Abilities</a></li>
+        <li><a href="stories.html">Mythological Stories</a></li>
+      </ul>
+    </nav>
+    <h2>The Contest for Athens</h2>
+    <p>
+      The first king of Athens, King Cecrops, set out to find a patron deity for
+      his city state. He called upon both Poseidon and Athena, whose intense
+      rivalry nearly led to a war so Athena wisely suggested a peaceful contest
+      instead of a war. The two gods would each give the city a gift and the
+      people would choose the winner. Poseidon struck the ground with his
+      trident and produced a water spring. To the people's dismay, the water was
+      salty as Poseidon channeled this water from the sea. Athena planted an
+      olive tree that grew to provide olives for the city, oil for cooking and
+      lamps, and wood for buildig boats and houses. Thus, Athena was declared
+      the victor and the city was named Athens.
+    </p>
+    <h2>Creating the Horse</h2>
+    <p>
+      The legend states that Poseidon fell in love with the Goddess Demeter and
+      to impress her, he wanted to create the most beautiful creature for her.
+      He worked for some time and was able to create the horse. However, he had
+      taken so long to make the horse, that he was no longer in love with
+      Demeter. He gave the horse to the humans and they were able to use it for
+      racing, transportation and farming.
+    </p>
+  </body>
+</html>

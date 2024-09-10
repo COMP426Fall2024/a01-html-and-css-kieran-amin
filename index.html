@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Poseidon - Greek God of the Sea</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script>
+      function redirectToPage() {
+        var select = document.getElementById("pages");
+        var selectedValue = select.options[select.selectedIndex].value;
+        if (selectedValue) {
+          window.location.href = selectedValue.toLowerCase() + ".html";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the World of Poseidon</h1>
+    </header>
+    <div class="dropdown-container">
+      <div class="dropdown-trigger">Hover to select page</div>
+      <select id="pages" name="poseidon-page" onchange="redirectToPage()">
+        <option value="index">Home</option>
+        <option value="about">About</option>
+        <option value="powers">Powers</option>
+        <option value="stories">Stories</option>
+      </select>
+    </div>
+    <nav>
+      <ul class="horizontal-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Poseidon</a></li>
+        <li><a href="powers.html">Powers and Abilities</a></li>
+        <li><a href="stories.html">Mythological Stories</a></li>
+      </ul>
+    </nav>
+    <img id="poseidon-img" src="images/poseidon.jpg" alt="Poseidon" />
+    <table>
+      <tr>
+        <th>Greek Name</th>
+        <th>Roman Name</th>
+        <th>Domain</th>
+      </tr>
+      <tr>
+        <td>Zeus</td>
+        <td>Jupiter</td>
+        <td>King of Gods, Sky, Thunder</td>
+      </tr>
+      <tr>
+        <td>Hera</td>
+        <td>Juno</td>
+        <td>Marriage, Family, Childbirth</td>
+      </tr>
+      <tr>
+        <td>Poseidon</td>
+        <td>Neptune</td>
+        <td>Sea, Earthquakes, Horses</td>
+      </tr>
+      <tr>
+        <td>Athena</td>
+        <td>Minverva</td>
+        <td>Wisdom, War Strategy, Crafts</td>
+      </tr>
+      <tr>
+        <td>Ares</td>
+        <td>Mars</td>
+        <td>War, Violence</td>
+      </tr>
+      <tr>
+        <td>Aphrodite</td>
+        <td>Venus</td>
+        <td>Love, Beauty, Desire</td>
+      </tr>
+      <tr>
+        <td>Apollo</td>
+        <td>Apollo</td>
+        <td>Sun, Music, Poetry, Prophecy</td>
+      </tr>
+      <tr>
+        <td>Artemis</td>
+        <td>Diana</td>
+        <td>Moon, Hunting, Wilderness</td>
+      </tr>
+      <tr>
+        <td>Hades</td>
+        <td>Pluto</td>
+        <td>Underworld, The Dead</td>
+      </tr>
+      <tr>
+        <td>Hermes</td>
+        <td>Mercury</td>
+        <td>Messengers, Commerce, Travelers</td>
+      </tr>
+    </table>
+    <h2>About Poseidon</h2>
+    <p>
+      Poseidon is the Greek god of the sea, earthquakes, and horses. As one of
+      the twelve Olympian deities, he is a powerful and unpredictable force,
+      often depicted wielding a trident. Poseidon is the brother of Zeus and
+      Hades, and he rules over all waters, making him a vital figure for sailors
+      and seafarers. Sailors would pray to Poseidon for good fortune before
+      setting voyage. Known for his volatile temper, he could both calm the seas
+      or unleash devastating storms and tsunamis. In mythology, he is often
+      associated with horses, believed to have created them, and he fathered
+      many mythical creatures, including the winged horse Pegasus.
+    </p>
+    <h2>Powers and Abilities</h2>
+    <p>
+      Poseidon, the Greek god of the sea, wields immense powers over water,
+      storms, and natural disasters. As the ruler of the ocean, he can control
+      all bodies of water, causing calm seas or unleashing powerful waves and
+      storms. His primary weapon, the trident, grants him the ability to create
+      earthquakes, tsunamis, and floods. Poseidon is also associated with horses
+      and is said to have created them, further showcasing his connection to
+      both land and sea. His dominion over marine creatures and the oceanic
+      depths makes him one of the most powerful and unpredictable Olympian gods.
+    </p>
+    <h2>Mythological Stories</h2>
+    <p>
+      Poseidon features prominently in several mythological stories that
+      highlight his power, temper, and complex relationships with gods and
+      mortals alike. See the Stories page for specific tales.
+    </p>
+    <footer>
+      <p id="footer">&copy; 2024 Kieran Amin</p>
+    </footer>
+  </body>
+</html>

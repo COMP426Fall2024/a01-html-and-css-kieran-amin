@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Poseidon</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script>
+      function redirectToPage() {
+        var select = document.getElementById("pages");
+        var selectedValue = select.options[select.selectedIndex].value;
+        if (selectedValue) {
+          window.location.href = selectedValue.toLowerCase() + ".html";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>About Poseidon</h1>
+    </header>
+
+    <main>
+      <div class="dropdown-container">
+        <div class="dropdown-trigger">Hover to select page</div>
+        <select id="pages" name="poseidon-page" onchange="redirectToPage()">
+          <option value="index">Home</option>
+          <option value="about">About</option>
+          <option value="powers">Powers</option>
+          <option value="stories">Stories</option>
+        </select>
+      </div>
+      <nav>
+        <ul class="horizontal-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Poseidon</a></li>
+          <li><a href="powers.html">Powers and Abilities</a></li>
+          <li><a href="stories.html">Mythological Stories</a></li>
+        </ul>
+      </nav>
+      <img
+        id="poseidonStatue-img"
+        src="images/poseidonStatue.jpg"
+        alt="Poseidon"
+      />
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          Poseidon is one of the twelve Olympian gods in Greek mythology. He is
+          the god of the sea, earthquakes, and horses. Poseidon is referenced as
+          one of the Big Three, as he is brothers with Zeus and Hades. Together,
+          the Big Three rule the Heavens, the Earth and Hell.
+        </p>
+      </section>
+
+      <section>
+        <h2>Mythology</h2>
+        <p>
+          In Greek mythology, Poseidon is often depicted as a powerful and
+          temperamental deity. He is known for his trident, which he uses to
+          control the sea and create earthquakes.
+        </p>
+      </section>
+
+      <section>
+        <h2>Symbolism</h2>
+        <p>
+          Poseidon is often symbolized by his trident, which represents his
+          power and control over the sea. The trident is also associated with
+          his ability to create earthquakes.
+        </p>
+      </section>
+      <img id="bigthree-img" src="images/Big_Three.webp" alt="Poseidon" />
+    </main>
+  </body>
+</html>
